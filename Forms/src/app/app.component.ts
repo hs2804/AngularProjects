@@ -11,6 +11,8 @@ export class AppComponent {
     const suggestedName = 'Superuser';
   }
   onSubmit(form: NgForm) {
-    console.log(form);
+    console.log(`Touched? : ${form.touched}`);
+    console.log(`Dirty? : ${form.dirty}`);
+    console.log(`Disabled? : ${form.disabled}`);
   }
 }
